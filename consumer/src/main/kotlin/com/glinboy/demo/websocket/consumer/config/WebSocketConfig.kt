@@ -14,4 +14,10 @@ class WebSocketConfig : WebSocketMessageBrokerConfigurer {
         config.enableSimpleBroker("/topic")
         config.setApplicationDestinationPrefixes("/app")
     }
+
+    override fun registerStompEndpoints(registry: StompEndpointRegistry) {
+        registry
+            .addEndpoint("/stomp-endpoint")
+            .withSockJS()
+    }
 }
