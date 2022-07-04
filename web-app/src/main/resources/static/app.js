@@ -31,3 +31,7 @@ function disconnect() {
   setConnected(false);
   console.log("Disconnected");
 }
+
+function sendName() {
+  stompClient.send("/app/hello", {}, JSON.stringify({'name': $("#name").val()}));
+}
