@@ -39,3 +39,12 @@ function sendName() {
 function showGreeting(message) {
   $("#greetings").append("<tr><td>" + message + "</td></tr>");
 }
+
+$(function () {
+  $("form").on('submit', function (e) {
+    e.preventDefault();
+  });
+  $( "#connect" ).click(function() { connect(); });
+  $( "#disconnect" ).click(function() { disconnect(); });
+  $( "#send" ).click(function() { sendName(); });
+});
