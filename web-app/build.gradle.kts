@@ -26,7 +26,7 @@ dependencies {
     implementation("org.webjars:sockjs-client:1.5.1")
     implementation("org.webjars:stomp-websocket:2.3.4")
     implementation("org.webjars:bootstrap:3.3.7")
-    implementation("org.webjars:jquery:3.1.1-1")
+    implementation("org.webjars:jquery:3.6.1")
 }
 
 tasks.withType<KotlinCompile> {
