@@ -25,7 +25,7 @@ dependencies {
     implementation("org.webjars:webjars-locator-core")
     implementation("org.webjars:sockjs-client:1.5.1")
     implementation("org.webjars:stomp-websocket:2.3.4")
-    implementation("org.webjars:bootstrap:5.2.2")
+    implementation("org.webjars:bootstrap:5.2.3")
     implementation("org.webjars:jquery:3.6.1")
 }
 
