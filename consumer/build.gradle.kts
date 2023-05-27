@@ -13,6 +13,8 @@ group = "com.glinboy.demo.websocket"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
+val jacksonModuleVersion = "2.15.1"
+
 repositories {
     mavenCentral()
 }
@@ -24,7 +26,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.15.0")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonModuleVersion")
 }
 
 tasks.withType<KotlinCompile> {
