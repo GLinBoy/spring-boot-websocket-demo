@@ -11,7 +11,7 @@ plugins {
 
 group = "com.glinboy.demo.websocket"
 version = "0.0.1-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_17
+java.sourceCompatibility = JavaVersion.VERSION_21
 
 val socketJsClientVersion = "1.5.1"
 val stompWebsocketVersion = "2.3.4"
@@ -37,7 +37,7 @@ dependencies {
 tasks.withType<KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "17"
+        jvmTarget = "21"
     }
 }
 
