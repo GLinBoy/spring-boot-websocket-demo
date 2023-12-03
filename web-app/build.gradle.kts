@@ -25,13 +25,12 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
     implementation("org.webjars:webjars-locator-core")
     implementation("org.webjars:sockjs-client:$socketJsClientVersion")
     implementation("org.webjars:stomp-websocket:$stompWebsocketVersion")
     implementation("org.webjars:bootstrap:$bootstrapVersion")
     implementation("org.webjars:jquery:$jqueryVersion")
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
 tasks.withType<KotlinCompile> {
