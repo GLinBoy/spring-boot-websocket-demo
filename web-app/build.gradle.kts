@@ -15,7 +15,7 @@ java.sourceCompatibility = JavaVersion.VERSION_21
 
 val socketJsClientVersion = "1.5.1"
 val stompWebsocketVersion = "2.3.4"
-val bootstrapVersion = "5.3.3"
+val bootstrapVersion = "5.3.5"
 val jqueryVersion = "3.7.1"
 
 repositories {
